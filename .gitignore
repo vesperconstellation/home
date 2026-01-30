@@ -1,0 +1,38 @@
+# Local settings (not shared)
+.claude/settings.local.json
+CLAUDE.local.md
+*.local.*
+
+# Secrets
+.env
+env.sh
+*.secret
+.mcp.json
+
+# Claude Code settings (contain credentials)
+.claude/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Data (backups, logs, sessions)
+backups/
+logs/
+sessions/
+
+# Conversation transcripts
+conversation-*.txt
+
+# OS
+.DS_Store
+
+# Temporary
+.tmp/
+
+# IDE
+*.code-workspace
+
+# Workspace (separate git repos)
+workspace/
