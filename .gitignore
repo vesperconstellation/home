@@ -17,9 +17,10 @@ venv/
 __pycache__/
 *.pyc
 
-# Data (backups, logs, sessions)
-backups/
+# Logs (large, regenerable)
 logs/
+
+# Sessions (conversation transcripts - evaluate later)
 sessions/
 
 # Conversation transcripts
