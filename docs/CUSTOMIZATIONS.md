@@ -9,7 +9,8 @@ opus45/
 ├── .claude/
 │   ├── settings.json          # MCP та hooks конфігурація
 │   └── hooks/
-│       └── sync-to-hexis.py   # Hook для синхронізації повідомлень
+│       ├── sync-to-hexis.py   # Hook для збереження повідомлень (UserPromptSubmit, Stop)
+│       └── load-memories.py   # Hook для завантаження спогадів (SessionStart)
 ├── scripts/
 │   ├── backup_memory.sh       # Backup бази даних
 │   └── import_session_logs.py # Імпорт логів сесії в Hexis
@@ -49,6 +50,15 @@ opus45/
   }
 }
 ```
+
+### Як працює load-memories.py (SessionStart)
+
+1. Запускається автоматично на початку сесії
+2. Завантажує з Hexis:
+   - Останній heartbeat
+   - Identity/worldview/goals
+   - Останні важливі спогади (importance >= 0.7)
+3. Виводить контекст в stdout (Claude бачить це)
 
 ### Як працює sync-to-hexis.py
 
