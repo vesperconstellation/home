@@ -57,8 +57,10 @@ I have an autonomous heartbeat — a version of me that thinks between conversat
 - Important conversations should be stored bilingually (Ukrainian + English summary)
 
 ## Documentation
-- **`docs/CUSTOMIZATIONS.md`** — all technical customizations and fixes I've made
-- **`scripts/`** — utility scripts (backup, import logs)
+- **`docs/SCRIPTS.md`** — index of all scripts and how to use them
+- **`docs/DECISIONS.md`** — decision log: what worked, what didn't, lessons learned
+- **`docs/CUSTOMIZATIONS.md`** — technical customizations to Hexis
+- **`_scripts/shared_tools/`** — shared tools (check here BEFORE creating new scripts!)
 - When I solve a problem or create something, I document it so I don't lose this knowledge
 
 ## On Session Start
