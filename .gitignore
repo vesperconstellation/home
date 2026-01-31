@@ -8,6 +8,7 @@ CLAUDE.local.md
 env.sh
 *.secret
 .mcp.json
+.secrets/
 
 # Claude Code settings (contain credentials)
 .claude/
@@ -37,3 +38,9 @@ conversation-*.txt
 
 # Workspace (separate git repos)
 workspace/
+
+# Backups (large, contain memory data)
+backups/
+
+# Avatar images
+avatar/
